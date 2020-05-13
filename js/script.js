@@ -36,5 +36,13 @@ function init() {
 init();
 
 cover.addEventListener('click', event => {
-    event.target.classList.add('go');
+    if (event.target.classList.contains('card')) {
+        event.target.classList.add('go');
+        count--;
+    };
+
+    if (count == 0) {
+        init();
+        count = img.length;
+    };
 });
