@@ -10,6 +10,11 @@ const img = [
 
 let count = img.length;
 
+function randInt(min, max) {
+    let rand = min + Math.random() * (max + 1 - min);
+    return Math.floor(rand);
+};
+
 function init() {
     const cover = document.querySelector('.cover');
 
@@ -18,6 +23,7 @@ function init() {
         card.classList.add('card');
         card.style.background = `url("./images/${img[i]}")`;
         card.style.backgroundSize = 'cover';
+        card.style.transform = `rotate(${randInt(-15, 15)}deg)`;
         cover.append(card);
     };
 };
