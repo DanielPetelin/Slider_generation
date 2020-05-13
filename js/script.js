@@ -23,7 +23,7 @@ function init() {
         card.classList.add('card');
         card.style.background = `url("./images/${img[i]}")`;
         card.style.backgroundSize = 'cover';
-        card.style.transform = `rotate(${randInt(-15, 15)}deg)`;
+        card.style.transform = `rotate(${randInt(-15, 15)}deg) translate(${randInt(-40, 40)}px, ${randInt(-40, 40)}px)`;
         cover.append(card);
     };
 };
