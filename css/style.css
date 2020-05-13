@@ -1,0 +1,11 @@
+.container {
+    width: 700px;
+    margin: 0 auto;
+}
+
+.cover {
+    padding: 30;
+    border: 1px solid #c0c0c0;
+    min-height: 400px;
+    position: relative;
+}
