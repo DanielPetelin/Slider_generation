@@ -9,3 +9,13 @@
     min-height: 400px;
     position: relative;
 }
+
+.card {
+    width: 80%;
+    height: 80%;
+    box-shadow: 3px 3px 5px #333;
+    position: absolute;
+    transition: all ease 1s;
+    left: 10%;
+    top: 15%;
+}
