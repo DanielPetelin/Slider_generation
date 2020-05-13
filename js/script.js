@@ -11,6 +11,15 @@ const img = [
 let count = img.length;
 
 function init() {
-    let card = document.createElement('div');
-    card.classList.add('card');
+    const cover = document.querySelector('.cover');
+
+    for (let i = 0; i < img.length; i++) {
+        let card = document.createElement('div');
+        card.classList.add('card');
+        card.style.background = `url("./images/${img[i]}")`;
+        card.style.backgroundSize = 'cover';
+        cover.append(card);
+    };
 };
+
+init();
