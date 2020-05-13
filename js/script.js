@@ -9,6 +9,11 @@ const img = [
 ];
 
 let count = img.length;
+const cover = document.querySelector('.cover');
+
+function shuffle(array) {
+    array.sort(() => Math.random() - 0.5);
+};
 
 function randInt(min, max) {
     let rand = min + Math.random() * (max + 1 - min);
@@ -16,7 +21,7 @@ function randInt(min, max) {
 };
 
 function init() {
-    const cover = document.querySelector('.cover');
+    shuffle(img);
 
     for (let i = 0; i < img.length; i++) {
         let card = document.createElement('div');
@@ -29,3 +34,7 @@ function init() {
 };
 
 init();
+
+cover.addEventListener('click', event => {
+    event.target.classList.add('go');
+});

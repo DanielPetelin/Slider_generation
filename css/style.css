@@ -15,7 +15,11 @@
     height: 80%;
     box-shadow: 3px 3px 5px #333;
     position: absolute;
-    transition: all ease 1s;
+    transition: all ease 2s;
     left: 10%;
     top: 15%;
+}
+
+.go {
+    left: -9999999px;
 }
