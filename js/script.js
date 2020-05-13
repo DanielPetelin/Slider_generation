@@ -42,6 +42,11 @@ cover.addEventListener('click', event => {
     };
 
     if (count == 0) {
+        let deletedCards = document.querySelectorAll('.card');
+
+        for (let i = 0; i < deletedCards.length; i++) {
+            deletedCards[i].remove();
+        };
         init();
         count = img.length;
     };
